@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehndi Designs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Mehndi Designs</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Discover beautiful mehndi designs for every occasion.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <!-- Gallery images -->
+            <div class="gallery-item">
+                <img src="1.jpg" alt="Mehndi Design 1" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="2.jpg" alt="Mehndi Design 2" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="3.jpg" alt="Mehndi Design 3" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="4.jpg" alt="Mehndi Design 4" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="5.jpg" alt="Mehndi Design 5" onclick="openModal(this)">
+            </div>
+            
+            <!-- Repeat this block for each image, up to 100 images -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>We specialize in creating intricate and beautiful mehndi designs for all events.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>For inquiries, please email us at <a href="mailto:info@mehndidesigns.com">info@mehndidesigns.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mehndi Designs. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
